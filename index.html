@@ -12,11 +12,15 @@
   </head>
   <body class="page">
     <main class="content">
+      <!-- ЛЕВАЯ ЧАСТЬ: ВИДЕО И ПОИСК -->
       <section class="result">
         <div class="result__video-container">
           <video src="" controls class="result__video" poster=""></video>
         </div>
+        
+        <!-- ФОРМА ПОИСКА -->
         <form class="search-form">
+          <!-- Город -->
           <fieldset class="search-form__fieldset">
             <h2 class="search-form__fieldset-title">Город</h2>
             <label class="search-form__label">
@@ -29,6 +33,8 @@
               />
             </label>
           </fieldset>
+
+          <!-- Время суток -->
           <fieldset class="search-form__fieldset">
             <h2 class="search-form__fieldset-title">Время суток</h2>
             <div class="search-form__checkbox-list">
@@ -64,11 +70,15 @@
               </label>
             </div>
           </fieldset>
+
+          <!-- Кнопка поиска -->
           <button type="submit" class="button search-form__submit-button">
             Найти
           </button>
         </form>
       </section>
+
+      <!-- ПРАВАЯ ЧАСТЬ: ЗАГОЛОВОК И СПИСОК ВИДЕО -->
       <section class="content__details">
         <h1 class="title">
           <span class="content__accent">По-</span><br />смотри<br />в окно
@@ -81,8 +91,9 @@
       </section>
     </main>
 
-    <!-- ТЕМПЛЕЙТЫ -->
+    <!-- ===== ТЕМПЛЕЙТЫ ===== -->
 
+    <!-- Прелоадер -->
     <template class="preloader-template">
       <div class="preloader">
         <div class="preloader-chasing-squares">
@@ -94,6 +105,7 @@
       </div>
     </template>
 
+    <!-- Карточка видео -->
     <template class="cards-list-item-template">
       <li class="content__list-item">
         <a href="#0" class="content__card-link">
@@ -107,15 +119,19 @@
         </a>
       </li>
     </template>
+
+    <!-- Кнопка "Показать ещё" -->
     <template class="more-button-template">
-      <button class="button more-button">Показать еще</button>
+      <button class="button more-button">Показать ещё</button>
     </template>
 
+    <!-- Ошибка (видео не найдено) -->
     <template class="error-template">
       <div class="error">
         <h2 class="error__title">Из этого города нет видео :(</h2>
       </div>
     </template>
+
     <script src="./scripts/script.js"></script>
   </body>
 </html>
